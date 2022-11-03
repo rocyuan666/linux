@@ -12,11 +12,33 @@
     <link rel="stylesheet" type="text/css" href="css/index.css?v=1667366364043">
     <script src="js/dark-mode.min.js"></script>
     <script type="module" src="js/github-corners.js"></script>
+    <style>
+      .warpper {
+        justify-content: space-between;
+      }
+      .warpper .footer {
+        padding-bottom: 30px;
+      }
+      .info-box {
+        padding-top: 20px;
+      }
+      .info-box p a {
+        font-size: 16px;
+      }
+      .header {
+        width: 900px;
+      }
+      .header.home .search {
+        min-width: 100%;
+      }
+      .header_inner {
+        max-width: 100%;
+      }
+    </style>
 </head>
 <body>
 <dark-mode permanent dark="Dark" light="Light" style="position: fixed;left: 10px;top: 8px; z-index: 999;"></dark-mode>
 <div class="warpper">
-<github-corners target="__blank" z-index="999" position="fixed" href="https://github.com/jaywcjlove/linux-command"></github-corners>
 <div class="header home">
   <div class="header_inner">
       <div class="logo">
@@ -34,26 +56,13 @@
               <button id="search_btn">搜索</button>
           </div>
       </div>
+      <div class="info-box">
+        <p><a href="hot.html">命令列表</a></p>
+      </div>
   </div>
 </div>
-<!-- Linux命令行搜索引擎：https://jaywcjlove.github.io/linux-command/ -->
-<div class="footer  home ">
-  <a target="_blank" href="https://github.com/jaywcjlove/linux-command/new/master/command">添加命令</a> |
-  <a href="hot.html">命令列表</a> |
-  <a href="https://github.com/jaywcjlove/oscnews" target="_blank">Chrome 插件</a> |
-  <a href="https://github.com/jaywcjlove/linux-command/releases" target="_blank">Alfred</a> |
-  <a href="https://jaywcjlove.github.io/linux-command/linux-command.docset.zip" target="_blank">Dash</a> |
-  <a href="https://github.com/roachsinai/krunner-linuxcommands" target="_blank">Krunner</a> |
-  <a href="http://jaywcjlove.gitee.io/linux-command/" target="_blank">开源中国Web版</a>
-  <br />
-  <a href="https://github.com/jaywcjlove/linux-command" target="_blank">Github</a> |
-  <a href="https://jaywcjlove.github.io/linux-command/" target="_blank">短地址：https://git.io/linux</a>
-  <br />
-  收藏本站请使用 Ctrl+D 或者Command+d
-  <br /> 共搜集到
-  <span id="commands_info">
-    586
-  </span> 个Linux命令，超过 <a href="contributors.html">50+</a> 贡献者
+<div class="footer home">
+  <a style="color: #666;" target="_blank" href="https://github.com/jaywcjlove/linux-command">命令来源</a>
 </div>
 </div>
 <script type="text/javascript" src="js/dt.js?v=1667366364044"></script>
